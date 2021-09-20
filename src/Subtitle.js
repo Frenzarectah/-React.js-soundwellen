@@ -3,7 +3,7 @@ import React from 'react';
 
 function Subtitle() {
     return (
-        <div className="subtitle">coming soon...</div>
+        <div className="subtitle">soundwellen</div>
     );
   }
 

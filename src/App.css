@@ -7,9 +7,19 @@
   to {opacity:1;};
 }
 
-@keyframes pulse{
- from{ width:30%;};
- to{width:35%};
+@keyframes slider{
+  from{
+    left:0px;
+  }
+  to{
+    left:25px;
+    opacity:1;
+  };
+}
+.sound{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .App{ 
   display:flex;
@@ -31,10 +41,11 @@
   animation-fill-mode: forwards;
 }
 .subtitle{
+  position:relative;
   color:white;
   font-family:'Lastica';
   opacity:0;
-  animation-name:fadeIn;
+  animation-name:slider;
   animation-delay:3s;
   animation-duration:4s;
   animation-fill-mode: forwards;
