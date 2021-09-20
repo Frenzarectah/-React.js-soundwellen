@@ -16,6 +16,12 @@
     opacity:1;
   };
 }
+@keyframes slideAway{
+  to{
+    opacity:0;
+    display:none;
+  }
+}
 .sound{
   display: flex;
   justify-content: center;
@@ -32,6 +38,7 @@
 }
 
 .logo{
+  position:relative;
   width:30%;
   height:auto;
   opacity: 0;
@@ -49,6 +56,12 @@
   animation-delay:3s;
   animation-duration:4s;
   animation-fill-mode: forwards;
+}
+.slideAway{
+  animation-name:slideAway;
+  /*animation-delay:1s;*/
+  animation-duration:2s;
+  animation-fill-mode:forwards;
 }
 @media only screen and (max-width: 600px){
   .logo{
