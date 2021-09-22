@@ -22,6 +22,23 @@
     display:none;
   }
 }
+navbar{
+  color:white;
+}
+.head{
+  position: absolute;
+  width:100%;
+  top:0;
+}
+ul{
+  list-style-type: none;
+  display:flex;
+  justify-content: space-around;
+}
+li{
+  display:inline;
+  margin-right:5%;
+}
 .sound{
   display: flex;
   justify-content: center;
@@ -59,7 +76,6 @@
 }
 .slideAway{
   animation-name:slideAway;
-  /*animation-delay:1s;*/
   animation-duration:2s;
   animation-fill-mode:forwards;
 }
