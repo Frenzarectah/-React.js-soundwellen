@@ -6,18 +6,25 @@ import Navbar from './Navbar';
 function App(){
   function changePage(){
     var logo = document.getElementById("soundwellen");
+    var sub = document.getElementsByClassName("subtitle")[0];
     logo.className="slideAway";
+    logo.style.display="none";
+    sub.style.display="none";
+    var icon = document.getElementById("ico");
+    icon.className+=" _fadeIn";
+
   }
-  function fadIn(){
-    var icon = document.querySelector(".icon");
-    icon.className+="_fadeIn";
+  function openMenu(){
+    document.getElementbyId("ico").className-="_fadeIn";
+    document.getElementbyId("ico").className+="icon";
+    document.getElementById("ico").className+=" _rotate";
   }
   return (
     <div className="App">
-          <img src={icon} className="icon" onClick={fadIn}/>
+          <img src={icon} className="icon" id="ico" onClick={openMenu} />
           <div className="head"><Navbar menu1="home" menu2="contatti" menu3="djs"/></div>
-          <a href="#" onClick={changePage} className="sound">
-            <img src={logo} className="logo" alt="logo" id="soundwellen" />
+          <a href="#" className="sound">
+            <img src={logo} className="logo" alt="logo" id="soundwellen" onClick={changePage} />
           </a>
           <Subtitle />
     </div>

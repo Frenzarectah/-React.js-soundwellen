@@ -22,6 +22,14 @@
     display:none;
   }
 }
+@keyframes rotate{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(120deg);
+  }
+}
 navbar{
   font-family:'Lastica';
   color:white;
@@ -44,13 +52,19 @@ li{
   position:absolute;
   right:5%;
   top:5%;
-  width:25px;
+  width:50px;
   height:auto;
-  transition:opacity 2s;
   opacity:0;
 }
 ._fadeIn{
-  opacity:1;
+  animation-name:fadeIn;
+  animation-duration:2s;
+  animation-fill-mode:forwards;
+}
+._rotate{
+  animation-name:rotate;
+  animation-duration:2s;
+  animation-fill-mode: forwards;
 }
 .sound{
   display: flex;
@@ -66,7 +80,6 @@ li{
   height:100vh;
   margin:auto;
 }
-
 .logo{
   position:relative;
   width:30%;
@@ -98,6 +111,8 @@ li{
     height:auto;
   }
   .icon{
+    width:25px;
+    height:auto;
     top:2%;
     right:2%;
   }
