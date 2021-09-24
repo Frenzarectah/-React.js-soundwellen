@@ -8,16 +8,16 @@ function App(){
     var logo = document.getElementById("soundwellen");
     var sub = document.getElementsByClassName("subtitle")[0];
     logo.className="slideAway";
-    logo.style.display="none";
-    sub.style.display="none";
+    /*logo.style.display="none";
+    sub.style.display="none";*/
     var icon = document.getElementById("ico");
+    if(icon.classList.contains("_fadeIn")===false){
     icon.className+=" _fadeIn";
-
+    };
   }
   function openMenu(){
-    document.getElementbyId("ico").className-="_fadeIn";
-    document.getElementbyId("ico").className+="icon";
-    document.getElementById("ico").className+=" _rotate";
+    document.getElementById("ico").classList.remove(" _fadeIn");
+    console.log(document.getElementById("ico").classList());
   }
   return (
     <div className="App">
