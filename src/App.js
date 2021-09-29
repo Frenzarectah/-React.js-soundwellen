@@ -23,7 +23,7 @@ function App(){
     return (
     <div className="App">
           <div className="head">
-            <Navbar menu1="Our DJ's" menu2="Events" menu3="Contact Us"/>
+            <Navbar menu1="Our DJ's" menu2="Events" menu3="Contact"/>
             <img src={icon} className="icon" id="ico" onClick={openMenu}/>
           </div>
           <a href="#" className="sound">

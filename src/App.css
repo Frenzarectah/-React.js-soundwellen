@@ -45,6 +45,7 @@ App{
 .head{
   position: absolute;
   font-family:'Lastica';
+  font-size:1em;
   color:black;
   transition:color 4s;
   width:100%;
@@ -144,4 +145,14 @@ li{
     top:4%;
     right:4%;
   }
+ul{
+  justify-content:left;
+}
+li{
+  margin-left:10px;
+}
+  .head{
+    font-size:0.6em;
+  }
+
 }
