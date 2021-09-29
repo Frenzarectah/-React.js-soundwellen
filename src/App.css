@@ -1,3 +1,6 @@
+App{
+  background-color: #000;
+}
 @font-face {
   font-family: 'Lastica';
   src: url('/src/fonts/Lastica.ttf') format('truetype');;
@@ -17,8 +20,15 @@
   };
 }
 @keyframes slideAway{
+  from{
+    opacity:1;
+    width:30%;
+    height:auto;
+  }
   to{
     opacity:0;
+    width:30%;
+    height:auto;
     display:none;
   }
 }
@@ -96,7 +106,7 @@ li{
   font-family:'Lastica';
   opacity:0;
   animation-name:slider;
-  animation-delay:3s;
+  animation-delay:2s;
   animation-duration:4s;
   animation-fill-mode: forwards;
 }

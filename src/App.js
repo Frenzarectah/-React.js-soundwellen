@@ -8,8 +8,7 @@ function App(){
     var logo = document.getElementById("soundwellen");
     var sub = document.getElementsByClassName("subtitle")[0];
     logo.className="slideAway";
-    /*logo.style.display="none";
-    sub.style.display="none";*/
+    sub.className="slideAway";
     var icon = document.getElementById("ico");
     if(icon.classList.contains("_fadeIn")===false){
     icon.className+=" _fadeIn";
@@ -22,7 +21,7 @@ function App(){
   return (
     <div className="App">
           <img src={icon} className="icon" id="ico" onClick={openMenu} />
-          <div className="head"><Navbar menu1="home" menu2="contatti" menu3="djs"/></div>
+          <div className="head"><Navbar menu1="home" menu2="contatti" menu3="dj's"/></div>
           <a href="#" className="sound">
             <img src={logo} className="logo" alt="logo" id="soundwellen" onClick={changePage} />
           </a>
