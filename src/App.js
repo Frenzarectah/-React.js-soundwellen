@@ -10,17 +10,19 @@ function App(){
     logo.className="slideAway";
     sub.className="slideAway";
     var icon = document.getElementById("ico");
-    if(icon.classList.contains("_fadeIn")===false){
+    /*if(icon.classList.contains("_fadeIn")===false){*/
     icon.className+=" _fadeIn";
-    };
+    /*};*/
   }
-  function openMenu(){
-    document.getElementById("ico").classList.remove(" _fadeIn");
-    console.log(document.getElementById("ico").classList());
+  var openMenu=()=>{
+    var menu = document.getElementById("ico");
+    menu.classList.add("_rotate");
+    /*var head = document.getElementById("list");
+    head.classList.add("head_in");*/
   }
-  return (
+    return (
     <div className="App">
-          <img src={icon} className="icon" id="ico" onClick={openMenu} />
+          <img src={icon} className="icon" id="ico" onClick={openMenu}/>
           <div className="head"><Navbar menu1="home" menu2="contatti" menu3="dj's"/></div>
           <a href="#" className="sound">
             <img src={logo} className="logo" alt="logo" id="soundwellen" onClick={changePage} />

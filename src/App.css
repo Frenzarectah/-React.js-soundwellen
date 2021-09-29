@@ -27,28 +27,33 @@ App{
   }
   to{
     opacity:0;
-    width:30%;
+    width:15%;
     height:auto;
     display:none;
   }
 }
 @keyframes rotate{
   from{
+    opacity:1;
     transform:rotate(0deg);
   }
   to{
-    transform:rotate(120deg);
+    opacity:1;
+    transform:rotate(45deg);
   }
-}
-navbar{
-  font-family:'Lastica';
-  color:white;
 }
 .head{
   position: absolute;
+  font-family:'Lastica';
+  color:black;
+  transition:color 1s;
   width:100%;
-  top:0;
+  top:5%;
 }
+.head_in{
+  color:white;
+}
+
 ul{
   list-style-type: none;
   display:flex;

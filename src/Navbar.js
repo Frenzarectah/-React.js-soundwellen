@@ -2,11 +2,11 @@ import React from 'react';
 
 function Navbar(props){
     return(
-        <navbar><ul>
+        <div id="list"><ul>
             <li>{props.menu1}</li>
             <li>{props.menu2}</li>
             <li>{props.menu3}</li>
-            </ul></navbar>        
+            </ul></div>        
     );
 }
 export default Navbar;
