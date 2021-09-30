@@ -16,14 +16,14 @@ function App(){
   }
   var openMenu=()=>{
     var menu = document.getElementById("ico");
-    menu.classList.add("_rotate");
+    menu.classList.toggle("_rotate");
     var head = document.getElementById("list");
-    head.className+="head_in";
+    head.classList.toggle("menu_appear");
  }
     return (
     <div className="App">
           <div className="head">
-            <Navbar menu1="Our DJ's" menu2="Events" menu3="Contact"/>
+            <Navbar menu1="ARTISTS" menu2="SHOWS" menu3="NEWS" menu4="ABOUT US" menu5="CONTACTS"/>
             <img src={icon} className="icon" id="ico" onClick={openMenu}/>
           </div>
           <a href="#" className="sound">

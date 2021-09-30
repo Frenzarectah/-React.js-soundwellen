@@ -42,19 +42,31 @@ App{
     transform:rotate(45deg);
   }
 }
+@keyframes frame_in{
+  from{
+    opacity:1;
+    width:100%;
+  }
+  to{
+    opacity:0;
+    width:300%;
+  }
+}
+.frame{
+  position:absolute;
+  left:0;
+  top:0;
+  opacity:0;
+  width:100%;
+}
 .head{
   position: absolute;
   font-family:'Lastica';
-  font-size:1em;
+  font-size:0.7em;
   color:black;
-  transition:color 4s;
   width:100%;
   top:5%;
 }
-.head_in{
-  color:white;
-}
-
 ul{
   list-style-type: none;
   display:flex;
@@ -66,7 +78,7 @@ li{
 }
 .icon{
   position:absolute;
-  right:5%;
+  right:3%;
   top:5%;
   width:50px;
   height:auto;
@@ -121,6 +133,19 @@ li{
   animation-duration:2s;
   animation-fill-mode:forwards;
 }
+.menu_appear{
+  animation-name: menu_appear;
+  animation-duration:2s;
+  animation-fill-mode: forwards;
+}
+@keyframes menu_appear{
+  from{
+    color:black;
+  }
+  to{
+    color:white;
+  }
+}
 @media only screen and (max-width: 600px){
   @keyframes slideAway{
     from{
@@ -140,19 +165,20 @@ li{
     height:auto;
   }
   .icon{
-    width:50px;
+    width:30px;
     height:auto;
     top:4%;
-    right:4%;
+    right:2%;
   }
 ul{
-  justify-content:left;
+  justify-content:center;
 }
 li{
-  margin-left:10px;
+  margin:0px 8px 0px;
 }
   .head{
-    font-size:0.6em;
+    margin-top:-5px;
+    font-size:0.4em;
   }
 
 }
