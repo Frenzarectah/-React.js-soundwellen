@@ -1,3 +1,11 @@
+# Description
+This will be a little website for an Electronic Music Organization founded by some friends of mine in Bari who wanted to 
+have a presence in the web.
+I've offered my free collaboration in order to support them with my (small, for now :) knowledge in frontend developing.
+I took the chance to experiment the #React developing and the #ReactStrap library.
+It is a work-in-progress project but nevertheless, i wanted to share it in public mode.
+Bye :)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
