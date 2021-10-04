@@ -139,7 +139,7 @@ li{
 .menu_appear{
   animation-name: menu_appear;
   animation-duration:2s;
-  animation-fill-mode: forwards;
+  animation-fill-mode:both;
 }
 a.nav-link{
   color:black;
@@ -166,6 +166,7 @@ a.nav-link{
       display:none;
     }
   }
+  
   .logo{
     width:60%;
     height:auto;

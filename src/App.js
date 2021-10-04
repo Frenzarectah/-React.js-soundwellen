@@ -20,12 +20,11 @@ function App(){
   var openMenu=()=>{
     var menu = document.getElementById("ico");
     menu.classList.toggle("_rotate");
-    var head = document.getElementsByClassName("head")[0];
-    head.classList.toggle("menu_appear");
+    var head = document.getElementsByTagName("a");
+    for (var el of head){
+      el.classList.toggle("menu_appear");
+    }
  }
- const divStile = {
-  color:'white'
-};
     return (
     <div className="App">
           <div className="head">
@@ -37,6 +36,7 @@ function App(){
               <NavLink>CONTACTS</NavLink>
               <NavbarToggler><img src={icon} className="icon" id="ico" onClick={openMenu}/></NavbarToggler>
             </Navbar>
+            <img src={icon} className="icon" id="ico" onClick={openMenu}/>
           </div>
           <a href="#" className="sound">
             <img src={logo} className="logo" alt="logo" id="soundwellen" onClick={changePage} />
