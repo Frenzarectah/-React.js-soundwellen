@@ -1,3 +1,5 @@
+
+
 App{
   background-color: #000;
 }
@@ -59,11 +61,15 @@ App{
   opacity:0;
   width:100%;
 }
+NavbarToggler{
+  color:white;
+  
+}
 .head{
   position: absolute;
   font-family:'Lastica';
   font-size:0.7em;
-  color:black;
+  color:white;
   width:100%;
   top:5%;
 }

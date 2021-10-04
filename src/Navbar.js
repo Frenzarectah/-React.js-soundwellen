@@ -5,7 +5,7 @@ import frame from './imgs/frame.jpg';
 var openDJS =()=>{
  alert("massivo");
 }
-function Navbar(props){
+function Novbar(props){
     return(
         <react.Fragment>
         <div id="list"><ul>
@@ -19,4 +19,4 @@ function Navbar(props){
         </react.Fragment>  
     );
 }
-export default Navbar;
+export default Novbar;
