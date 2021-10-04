@@ -61,10 +61,7 @@ App{
   opacity:0;
   width:100%;
 }
-NavbarToggler{
-  color:white;
-  
-}
+
 .head{
   position: absolute;
   font-family:'Lastica';
@@ -143,6 +140,9 @@ li{
   animation-name: menu_appear;
   animation-duration:2s;
   animation-fill-mode: forwards;
+}
+a.nav-link{
+  color:black;
 }
 @keyframes menu_appear{
   from{
