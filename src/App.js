@@ -14,13 +14,15 @@ function App(){
     sub.className="slideAway";
     sound.className="slideAway";
     var icon = document.getElementById("ico_mob");
-    var icon_desk = document.getElementById("menu_desktop");
+    var icon_desk = document.getElementById("menu_desk");
     icon_desk.className+=" _fadeIn";
     icon.className+=" _fadeIn";
   }
   var openMenu=()=>{
     var menu = document.getElementById("ico_mob");
     menu.classList.toggle("_rotate");
+    var icon_desk = document.getElementById("menu_desk");
+    icon_desk.classList.toggle("_rotate");
     var head = document.getElementsByTagName("a");
     for (var el of head){
       el.classList.toggle("menu_appear");
@@ -36,7 +38,7 @@ function App(){
               <NavLink>ABOUT US</NavLink>
               <NavLink>CONTACTS</NavLink>
               <NavbarToggler><img src={icon} className="icon" id="ico_mob" onClick={openMenu}/></NavbarToggler>
-              <img src={icon}  id="menu_dsk" className="menu_desktop" onClick={openMenu}/>
+              <img src={icon}  id="menu_desk" className="menu_desktop" onClick={openMenu}/>
             </Navbar>
           </div>
           <a href="#" className="sound">
