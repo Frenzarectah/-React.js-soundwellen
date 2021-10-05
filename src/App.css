@@ -61,7 +61,6 @@ App{
   opacity:0;
   width:100%;
 }
-
 .head{
   position: absolute;
   font-family:'Lastica';
@@ -141,6 +140,14 @@ li{
   animation-duration:2s;
   animation-fill-mode:both;
 }
+#menu_desktop{
+    position:absolute;
+    right:3%;
+    top:5%;
+    width:50px;
+    height:auto;
+    opacity:0;
+}
 a.nav-link{
   color:black;
 }
@@ -176,6 +183,10 @@ a.nav-link{
     height:auto;
     top:4%;
     right:2%;
+  }
+  .menu_desktop{
+    display:none;
+
   }
 ul{
   display:flex;

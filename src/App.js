@@ -5,7 +5,6 @@ import {Collapse, Navbar, NavbarBrand, NavbarToggler, NavLink} from 'reactstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import icon from './imgs/menu_ico.jpg';
 import Novbar from './Navbar';
-import { isCompositeComponentWithType } from 'react-dom/test-utils';
 function App(){
   function changePage(){
     var logo = document.getElementById("soundwellen");
@@ -13,12 +12,14 @@ function App(){
     var sound = document.getElementsByClassName("sound")[0];
     logo.className="slideAway";
     sub.className="slideAway";
-    var icon = document.getElementById("ico");
+    sound.className="slideAway";
+    var icon = document.getElementById("ico_mob");
+    var icon_desk = document.getElementById("menu_desktop");
+    icon_desk.className+=" _fadeIn";
     icon.className+=" _fadeIn";
-    /*};*/
   }
   var openMenu=()=>{
-    var menu = document.getElementById("ico");
+    var menu = document.getElementById("ico_mob");
     menu.classList.toggle("_rotate");
     var head = document.getElementsByTagName("a");
     for (var el of head){
@@ -34,9 +35,9 @@ function App(){
               <NavLink>NEWS</NavLink>
               <NavLink>ABOUT US</NavLink>
               <NavLink>CONTACTS</NavLink>
-              <NavbarToggler><img src={icon} className="icon" id="ico" onClick={openMenu}/></NavbarToggler>
+              <NavbarToggler><img src={icon} className="icon" id="ico_mob" onClick={openMenu}/></NavbarToggler>
+              <img src={icon}  id="menu_dsk" className="menu_desktop" onClick={openMenu}/>
             </Navbar>
-            <img src={icon} className="icon" id="ico" onClick={openMenu}/>
           </div>
           <a href="#" className="sound">
             <img src={logo} className="logo" alt="logo" id="soundwellen" onClick={changePage} />
