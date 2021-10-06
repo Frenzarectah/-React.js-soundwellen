@@ -198,6 +198,8 @@ li{
   .head{
     margin-top:-5px;
     font-size:0.4em;
+    display:flex;
+    flex-direction: column;
   }
 .list{
   display:flex;

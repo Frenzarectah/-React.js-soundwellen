@@ -1,22 +1,51 @@
-import react from 'react';
-import React from 'react';
-import frame from './imgs/frame.jpg';
+import React, { useState } from 'react';
+import icon from './imgs/menu_ico.jpg';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText
+} from 'reactstrap';
 
-var openDJS =()=>{
- alert("massivo");
+const Navi = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <div>
+      <Navbar  expand="md">
+      <NavbarToggler className="icon" onClick={toggle}>{icon}</NavbarToggler>
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto" navbar>
+            <NavItem>
+              <NavLink>ARTISTS</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>SHOWS</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>NEWS</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>ABOUT US</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>CONTACTS</NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
 }
-function Novbar(props){
-    return(
-        <react.Fragment>
-        <div id="list"><ul>
-            <li onClick={()=>openDJS()}>{props.menu1}</li>
-            <li>{props.menu2}</li>
-            <li>{props.menu3}</li>
-            <li>{props.menu4}</li>
-            <li>{props.menu5}</li>
-            </ul>
-            </div>      
-        </react.Fragment>  
-    );
-}
-export default Novbar;
+
+export default Navi;
