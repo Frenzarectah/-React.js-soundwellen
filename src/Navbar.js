@@ -21,7 +21,11 @@ const Navi = (props) => {
 
   const toggle = () =>{ 
     setIsOpen(!isOpen);
-    var head = document.getElementsByTagName("a");
+    var menu = document.getElementById("ico_mob");
+    menu.classList.toggle("_rotate");
+    var icon_desk = document.getElementById("menu_desk");
+    icon_desk.classList.toggle("_rotate");
+    var head = document.getElementsByClassName("nav-link");
     for (var el of head){
       el.classList.toggle("menu_appear");
     }
@@ -29,8 +33,8 @@ const Navi = (props) => {
   return (
     <React.Fragment>
       <Navbar light expand="md">
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+        <Collapse isOpen={isOpen}  navbar>
+          <Nav className="ml px-3" navbar>
             <NavItem>
               <NavLink>ARTISTS</NavLink>
             </NavItem>
@@ -50,6 +54,7 @@ const Navi = (props) => {
         </Collapse>
       </Navbar>
       <img src={icon} className="icon" id="ico_mob" onClick={toggle}/>
+      <img src={icon}  id="menu_desk" className="menu_desktop" onClick={toggle}/>        
     </React.Fragment>
   );
 }
