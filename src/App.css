@@ -81,6 +81,7 @@ li{
 .icon{
   position:absolute;
   right:3%;
+  border:1px solid white;
   top:5%;
   width:50px;
   height:auto;
@@ -148,9 +149,9 @@ li{
     height:auto;
     opacity:0;
 }
-a.nav-link{
+/*.nav-link{
   color:black;
-}
+}*/
 @keyframes menu_appear{
   from{
     color:black;
@@ -184,26 +185,21 @@ a.nav-link{
     top:4%;
     right:2%;
   }
-  .menu_desktop{
+ .menu_desktop{
     display:none;
 
   }
-ul{
+/*ul{
   display:flex;
   justify-content:center;
 }
 li{
   margin:0px 5px 0px;
-}
+}*/
   .head{
     margin-top:-5px;
-    font-size:0.4em;
+    font-size:0.7em;
     display:flex;
     flex-direction: column;
   }
-.list{
-  display:flex;
-  justify-content: left;
-}
-
 }

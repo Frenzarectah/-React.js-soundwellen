@@ -14,16 +14,21 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
+import { ThemeProvider } from 'react-bootstrap';
 
 const Navi = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => setIsOpen(!isOpen);
-
+  const toggle = () =>{ 
+    setIsOpen(!isOpen);
+    var head = document.getElementsByTagName("a");
+    for (var el of head){
+      el.classList.toggle("menu_appear");
+    }
+  }
   return (
-    <div>
-      <Navbar  expand="md">
-      <NavbarToggler className="icon" onClick={toggle}>{icon}</NavbarToggler>
+    <React.Fragment>
+      <Navbar light expand="md">
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
@@ -44,7 +49,8 @@ const Navi = (props) => {
           </Nav>
         </Collapse>
       </Navbar>
-    </div>
+      <img src={icon} className="icon" id="ico_mob" onClick={toggle}/>
+    </React.Fragment>
   );
 }
 
