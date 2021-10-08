@@ -102,6 +102,9 @@ li{
   justify-content: center;
   align-items: center;
 }
+.nav-link{
+  width:max-content;
+}
 .App{ 
   display:flex;
   background-color:black;
@@ -188,9 +191,14 @@ li{
   .head{
     position: absolute;
     font-family:'Lastica';
-    font-size:0.8em;
+    font-size:1em;
     color:white;
     width:100%;
     top:5%;
   }
+ul{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 }
