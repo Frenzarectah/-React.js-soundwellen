@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
 import icon from './imgs/menu_ico.jpg';
+import Artists from './artists';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
 import {
   Collapse,
   Navbar,
-  NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
+  NavLink
 } from 'reactstrap';
-import { ThemeProvider } from 'react-bootstrap';
 
 const Navi = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,13 +29,19 @@ const Navi = (props) => {
       el.classList.toggle("menu_appear");
     }
   }
+  var openMenu = () =>{
+    var head = document.getElementsByClassName("nav-link");
+    for (var el of head){
+      el.classList.toggle("menu_appear");
+    }
+  }
   return (
     <React.Fragment>
       <Navbar light expand="md">
         <Collapse isOpen={isOpen}  navbar>
           <Nav className="ml px-3" navbar>
             <NavItem>
-              <NavLink>ARTISTS</NavLink>
+            <NavLink href="/artists" onClick={openMenu}>ARTISTS</NavLink>             
             </NavItem>
             <NavItem>
               <NavLink>SHOWS</NavLink>
@@ -53,9 +58,14 @@ const Navi = (props) => {
           </Nav>
         </Collapse>
       </Navbar>
-      <img src={icon} className="icon" id="ico_mob" onClick={toggle}/>
-      <img src={icon}  id="menu_desk" className="menu_desktop" onClick={toggle}/>        
-    </React.Fragment>
+      <img src={icon} alt="mobile icon" className="icon" id="ico_mob" onClick={toggle}/>
+      <img src={icon} alt="desktop icon" id="menu_desk" className="menu_desktop" onClick={toggle}/>        
+      <Router>
+      <Switch>
+    <Route path='/artists' component={Artists}/>
+      </Switch>
+      </Router>
+      </React.Fragment>
   );
 }
 

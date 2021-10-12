@@ -142,7 +142,7 @@ li{
 .menu_appear{
   animation-name: menu_appear;
   animation-duration:2s;
-  animation-fill-mode:both;
+  animation-fill-mode:forwards;
 }
 #menu_desk{
     position:absolute;
