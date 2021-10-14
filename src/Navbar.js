@@ -28,11 +28,6 @@ const Navi = (props) => {
     for (var el of head){
       el.classList.toggle("menu_appear");
     }
-  }
-  var openMenu = () =>{
-    document.onload = () =>{
-      alert("cliccato!");
-    }
     /*var head = document.getElementsByClassName("nav-link");
     for (var el of head){
       el.classList+="menu_appear";
@@ -44,10 +39,10 @@ const Navi = (props) => {
         <Collapse isOpen={isOpen}  navbar>
           <Nav className="ml px-3" navbar>
             <NavItem>
-            <NavLink href="/artists" OnClick={openMenu}>ARTISTS</NavLink>             
+            <NavLink href="/artists">ARTISTS</NavLink>             
             </NavItem>
             <NavItem>
-              <NavLink href="/shows">SHOWS</NavLink>
+              <NavLink href="#">SHOWS</NavLink>
             </NavItem>
             <NavItem>
               <NavLink>NEWS</NavLink>
