@@ -30,10 +30,13 @@ const Navi = (props) => {
     }
   }
   var openMenu = () =>{
-    var head = document.getElementsByClassName("nav-link");
-    for (var el of head){
-      el.classList.toggle("menu_appear");
+    document.onload = () =>{
+      alert("cliccato!");
     }
+    /*var head = document.getElementsByClassName("nav-link");
+    for (var el of head){
+      el.classList+="menu_appear";
+    }*/
   }
   return (
     <React.Fragment>
@@ -41,10 +44,10 @@ const Navi = (props) => {
         <Collapse isOpen={isOpen}  navbar>
           <Nav className="ml px-3" navbar>
             <NavItem>
-            <NavLink href="/artists" onClick={openMenu}>ARTISTS</NavLink>             
+            <NavLink href="/artists" OnClick={openMenu}>ARTISTS</NavLink>             
             </NavItem>
             <NavItem>
-              <NavLink>SHOWS</NavLink>
+              <NavLink href="/shows">SHOWS</NavLink>
             </NavItem>
             <NavItem>
               <NavLink>NEWS</NavLink>
@@ -63,6 +66,7 @@ const Navi = (props) => {
       <Router>
       <Switch>
     <Route path='/artists' component={Artists}/>
+    <Route path='/shows' component={Artists}/>
       </Switch>
       </Router>
       </React.Fragment>
