@@ -4,7 +4,6 @@ var Artists = () =>{
     for (var el of head){
       el.classList+="menu_appear";
     }
-    
     return(
         <React.Fragment>
         
