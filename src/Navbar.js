@@ -66,7 +66,6 @@ const Navi = (props) => {
       <Router>
       <Switch>
     <Route path='/artists' component={Artists}/>
-    <Route path='/shows' component={Artists}/>
       </Switch>
       </Router>
       </React.Fragment>
