@@ -45,13 +45,13 @@ const Navi = (props) => {
               <NavLink href="#">SHOWS</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink>NEWS</NavLink>
+              <NavLink href="#">NEWS</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink>ABOUT US</NavLink>
+              <NavLink href="#">ABOUT US</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink>CONTACTS</NavLink>
+              <NavLink href="#">CONTACTS</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
