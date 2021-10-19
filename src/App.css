@@ -1,7 +1,7 @@
 
-
 App{
   background-color: #000;
+  font-family:'Lastica';
 }
 @font-face {
   font-family: 'Lastica';
@@ -61,13 +61,21 @@ App{
   opacity:0;
   width:100%;
 }
-.head{
+/*.head{
   position: absolute;
   font-family:'Lastica';
   font-size:0.7em;
   color:white;
   width:100%;
   top:5%;
+}*/
+.navbar{
+  position: absolute;
+  font-family:'Lastica';
+  font-size:0.7em;
+  color:white;
+  width:100%;
+  top:10%;
 }
 ul{
   list-style-type: none;
@@ -191,14 +199,22 @@ li{
  .menu_desktop{
     visibility:hidden;
   }
-  .head{
+  /*.head{
     position: absolute;
     font-family:'Lastica';
     font-size:1em;
     color:white;
     width:100%;
     top:5%;
-  }
+  }*/
+.navbar{
+  position: absolute;
+    font-family:'Lastica';
+    font-size:1em;
+    color:white;
+    width:100%;
+    top:5%;
+}
 ul{
   display:flex;
   align-items: center;

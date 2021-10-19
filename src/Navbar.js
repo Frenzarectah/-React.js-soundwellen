@@ -28,21 +28,14 @@ const Navi = (props) => {
     head.forEach(function(el){
       el.classList.toggle("menu_appear");
     });
-    /*for (var el of head){
-      el.classList.toggle("menu_appear");
-    }*/
-    /*var head = document.getElementsByClassName("nav-link");
-    for (var el of head){
-      el.classList+="menu_appear";
-    }*/
   }
   return (
     <React.Fragment>
-      <Navbar light expand="md">
+      <Navbar light expand="md" fixed="top">
         <Collapse isOpen={isOpen}  navbar>
           <Nav className="ml px-3" navbar>
             <NavItem>
-            <NavLink href="/artists">ARTISTS</NavLink>             
+            <NavLink  href="/artists">ARTISTS</NavLink>             
             </NavItem>
             <NavItem>
               <NavLink href="/artists">SHOWS</NavLink>
