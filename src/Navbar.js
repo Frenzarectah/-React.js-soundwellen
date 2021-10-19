@@ -24,10 +24,13 @@ const Navi = (props) => {
     menu.classList.toggle("_rotate");
     var icon_desk = document.getElementById("menu_desk");
     icon_desk.classList.toggle("_rotate");
-    var head = document.getElementsByClassName("nav-link");
-    for (var el of head){
+    var head = document.querySelectorAll(".nav-link");
+    head.forEach(function(el){
       el.classList.toggle("menu_appear");
-    }
+    });
+    /*for (var el of head){
+      el.classList.toggle("menu_appear");
+    }*/
     /*var head = document.getElementsByClassName("nav-link");
     for (var el of head){
       el.classList+="menu_appear";
@@ -42,16 +45,16 @@ const Navi = (props) => {
             <NavLink href="/artists">ARTISTS</NavLink>             
             </NavItem>
             <NavItem>
-              <NavLink href="#">SHOWS</NavLink>
+              <NavLink href="/artists">SHOWS</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">NEWS</NavLink>
+              <NavLink href="/artists">NEWS</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">ABOUT US</NavLink>
+              <NavLink href="/artists">ABOUT US</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">CONTACTS</NavLink>
+              <NavLink href="/artists">CONTACTS</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

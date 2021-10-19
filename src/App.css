@@ -174,7 +174,10 @@ li{
       display:none;
     }
   }
-  
+  .nav-link{
+    text-decoration:none;
+    color:white;
+  }
   .logo{
     width:60%;
     height:auto;
