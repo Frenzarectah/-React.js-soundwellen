@@ -50,9 +50,9 @@ const Navi = (props) => {
             </NavItem>
           </Nav>
         </Collapse>
-      </Navbar>
-      <img src={icon} alt="mobile icon" className="icon" id="ico_mob" onClick={toggle}/>
+        <img src={icon} alt="mobile icon" className="icon" id="ico_mob" onClick={toggle}/>
       <img src={icon} alt="desktop icon" id="menu_desk" className="menu_desktop" onClick={toggle}/>        
+      </Navbar>
       <Router>
       <Switch>
     <Route path='/artists' component={Artists}/>

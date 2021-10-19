@@ -11,8 +11,8 @@ function changePage(){
   var head = document.querySelectorAll(".nav-link");
   head.forEach(function(el){
     el.classList.toggle("menu_appear");
-    /*el.style.color="white";
-    el.style.textDecoration="none";*/
+    el.style.color="white";
+    el.style.textDecoration="none";
   });
 }
 var Artists = () =>{

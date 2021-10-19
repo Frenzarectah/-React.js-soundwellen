@@ -151,6 +151,8 @@ li{
   animation-name: menu_appear;
   animation-duration:2s;
   animation-fill-mode:forwards;
+  color:white;
+  text-decoration:none;
 }
 #menu_desk{
     position:absolute;
