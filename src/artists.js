@@ -5,8 +5,8 @@ function changePage(){
   logo.style.display="none";
   sub.style.display="none";
   var icon = document.getElementById("ico_mob");
-  var icon_desk = document.getElementById("menu_desk");
-  icon_desk.className+=" _fadeIn";
+  //var icon_desk = document.getElementById("menu_desk");
+  //icon_desk.className+=" _fadeIn";
   icon.className+=" _fadeIn";
   var head = document.querySelectorAll(".nav-link");
   head.forEach(function(el){
@@ -18,7 +18,7 @@ function changePage(){
 var Artists = () =>{
     window.onload=() => changePage();
     return(        
-        <div style={{color:"white"}}>ARTISTI</div>
+        <div class="" style={{color:"white"}}>ARTISTI</div>
 );
 }
 export default Artists;

@@ -10,8 +10,8 @@ function App(){
     logo.className="slideAway";
     sub.className="slideAway";
     var icon = document.getElementById("ico_mob");
-    var icon_desk = document.getElementById("menu_desk");
-    icon_desk.className+=" _fadeIn";
+    //var icon_desk = document.getElementById("menu_desk");
+    //icon_desk.className+=" _fadeIn";
     icon.className+=" _fadeIn";
   }
     return (

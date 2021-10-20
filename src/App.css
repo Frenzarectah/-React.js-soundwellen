@@ -54,6 +54,7 @@ App{
     width:300%;
   }
 }
+
 .frame{
   position:absolute;
   left:0;
@@ -61,21 +62,13 @@ App{
   opacity:0;
   width:100%;
 }
-/*.head{
-  position: absolute;
-  font-family:'Lastica';
-  font-size:0.7em;
-  color:white;
-  width:100%;
-  top:5%;
-}*/
 .navbar{
   position: absolute;
   font-family:'Lastica';
   font-size:0.7em;
   color:white;
   width:100%;
-  top:10%;
+  top:15%;
 }
 ul{
   list-style-type: none;
@@ -90,7 +83,7 @@ li{
 .icon{
   position:absolute;
   right:3%;
-  top:5%;
+  top:15%;
   width:50px;
   height:auto;
   opacity:0;

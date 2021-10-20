@@ -21,8 +21,8 @@ const Navi = (props) => {
     setIsOpen(!isOpen);
     var menu = document.getElementById("ico_mob");
     menu.classList.toggle("_rotate");
-    var icon_desk = document.getElementById("menu_desk");
-    icon_desk.classList.toggle("_rotate");
+    //var icon_desk = document.getElementById("menu_desk");
+    //icon_desk.classList.toggle("_rotate");
     var head = document.querySelectorAll(".nav-link");
     head.forEach(function(el){
       el.classList.toggle("menu_appear");
@@ -51,7 +51,7 @@ const Navi = (props) => {
           </Nav>
         </Collapse>
         <img src={icon} alt="mobile icon" className="icon" id="ico_mob" onClick={toggle}/>
-      <img src={icon} alt="desktop icon" id="menu_desk" className="menu_desktop" onClick={toggle}/>        
+                
       </Navbar>
       <Router>
       <Switch>
@@ -63,3 +63,4 @@ const Navi = (props) => {
 }
 
 export default Navi;
+//<img src="none" alt="desktop icon" id="menu_desk" className="menu_desktop" onClick={toggle}/>
