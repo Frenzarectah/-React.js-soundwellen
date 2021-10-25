@@ -80,6 +80,13 @@ li{
   display:inline;
   margin-right:5%;
 }
+.whiteline{
+  position:absolute;
+  top:10%;
+  width:inherit;
+  height:1px;
+  background-color: white; 
+}
 .icon{
   position:absolute;
   right:3%;
@@ -107,6 +114,7 @@ li{
   width:max-content;
 }
 .App{ 
+  width:100%;
   display:flex;
   background-color:black;
   justify-content: center;
@@ -121,8 +129,8 @@ li{
   height:auto;
   opacity: 0;
   animation-name:fadeIn;
-  animation-delay: 2s;
-  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 .subtitle{
@@ -130,9 +138,9 @@ li{
   color:white;
   font-family:'Lastica';
   opacity:0;
-  animation-name:slider;
-  animation-delay:2s;
-  animation-duration:4s;
+  animation-name:slider,fadeIn;
+  animation-delay:1s;
+  animation-duration:3s;
   animation-fill-mode: forwards;
 }
 .slideAway{
@@ -191,17 +199,6 @@ li{
     top:4%;
     right:2%;
   }
- .menu_desktop{
-    visibility:hidden;
-  }
-  /*.head{
-    position: absolute;
-    font-family:'Lastica';
-    font-size:1em;
-    color:white;
-    width:100%;
-    top:5%;
-  }*/
 .navbar{
   position: absolute;
     font-family:'Lastica';
@@ -209,6 +206,9 @@ li{
     color:white;
     width:100%;
     top:5%;
+}
+.whiteline{
+  display:none;
 }
 ul{
   display:flex;

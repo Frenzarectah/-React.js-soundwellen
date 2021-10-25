@@ -50,8 +50,7 @@ const Navi = (props) => {
             </NavItem>
           </Nav>
         </Collapse>
-        <img src={icon} alt="mobile icon" className="icon" id="ico_mob" onClick={toggle}/>
-                
+        <img src={icon} alt="mobile icon" className="icon" id="ico_mob" onClick={toggle}/>             
       </Navbar>
       <Router>
       <Switch>
@@ -63,4 +62,3 @@ const Navi = (props) => {
 }
 
 export default Navi;
-//<img src="none" alt="desktop icon" id="menu_desk" className="menu_desktop" onClick={toggle}/>

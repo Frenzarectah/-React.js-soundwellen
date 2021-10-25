@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.css';
+
 function changePage(){
   var logo = document.getElementById("soundwellen");
   var sub = document.getElementsByClassName("subtitle")[0];
@@ -18,7 +20,8 @@ function changePage(){
 var Artists = () =>{
     window.onload=() => changePage();
     return(        
-        <div class="" style={{color:"white"}}>ARTISTI</div>
+        <div className="whiteline">
+        </div>
 );
 }
 export default Artists;

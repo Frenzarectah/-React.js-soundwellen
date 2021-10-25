@@ -16,7 +16,7 @@ function App(){
   }
     return (
     <div className="App">
-            <div><Navi/></div>
+          <Navi/>
           <a href="#" className="sound">
             <img src={logo} className="logo" alt="logo" id="soundwellen" onClick={changePage} />
           </a>
