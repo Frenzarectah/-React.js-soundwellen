@@ -20,8 +20,11 @@ function changePage(){
 var Artists = () =>{
     window.onload=() => changePage();
     return(        
-        <div className="whiteline">
-        </div>
+      <React.Fragment>
+        <div className="whiteline"></div>
+        <div className="subpage"><div>artisti</div></div>
+        </React.Fragment>
 );
 }
 export default Artists;
+//<div className="align-top"><div>ARTISTS</div></div>

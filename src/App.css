@@ -1,8 +1,4 @@
 
-App{
-  background-color: #000;
-  font-family:'Lastica';
-}
 @font-face {
   font-family: 'Lastica';
   src: url('/src/fonts/Lastica.ttf') format('truetype');;
@@ -54,13 +50,12 @@ App{
     width:300%;
   }
 }
-
-.frame{
-  position:absolute;
-  left:0;
-  top:0;
-  opacity:0;
-  width:100%;
+.subpage{
+  width:inherit;
+  height:90%;
+  display:flex;
+  justify-content: left;
+  align-items: flex-start;
 }
 .navbar{
   position: absolute;
@@ -109,11 +104,13 @@ li{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  text-decoration: none;
 }
 .nav-link{
   width:max-content;
 }
-.App{ 
+.App{
   width:100%;
   display:flex;
   background-color:black;
@@ -122,6 +119,10 @@ li{
   flex-direction: column;
   height:100vh;
   margin:auto;
+}
+.App_{ 
+  background-color: #000;
+  font-family:'Lastica';
 }
 .logo{
   position:relative;
@@ -138,10 +139,15 @@ li{
   color:white;
   font-family:'Lastica';
   opacity:0;
-  animation-name:slider,fadeIn;
+  animation-name:slider;
   animation-delay:1s;
   animation-duration:3s;
   animation-fill-mode: forwards;
+}
+.align-top{
+  align-self: flex-start;
+  justify-self: start;
+  
 }
 .slideAway{
   animation-name:slideAway;

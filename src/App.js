@@ -17,10 +17,12 @@ function App(){
     return (
     <div className="App">
           <Navi/>
+          <div>
           <a href="#" className="sound">
             <img src={logo} className="logo" alt="logo" id="soundwellen" onClick={changePage} />
+            <Subtitle />
           </a>
-          <Subtitle />         
+          </div>         
     </div>
   );
 }
