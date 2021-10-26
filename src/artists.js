@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ArtistCard from './artistCard';
 
 function changePage(){
   var logo = document.getElementById("soundwellen");
@@ -22,9 +23,11 @@ var Artists = () =>{
     return(        
       <React.Fragment>
         <div className="whiteline"></div>
-        <div className="subpage"><div>artisti</div></div>
+        <div className="subpage">
+            <div>artists</div>
+            <ArtistCard name="theverol" pic="/imgs/vevol.jpg" bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
+        </div>
         </React.Fragment>
 );
 }
 export default Artists;
-//<div className="align-top"><div>ARTISTS</div></div>

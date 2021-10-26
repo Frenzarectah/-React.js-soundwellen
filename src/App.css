@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 @font-face {
   font-family: 'Lastica';
@@ -52,10 +53,13 @@
 }
 .subpage{
   width:inherit;
-  height:90%;
+  height:80%;
+  font-family:'Lastica';
+  color:white;
   display:flex;
   justify-content: left;
   align-items: flex-start;
+  flex-direction:column;
 }
 .navbar{
   position: absolute;
@@ -75,11 +79,14 @@ li{
   display:inline;
   margin-right:5%;
 }
+h1{
+  color:white;
+}
 .whiteline{
   position:absolute;
   top:10%;
   width:inherit;
-  height:1px;
+  height:0.5px;
   background-color: white; 
 }
 .icon{

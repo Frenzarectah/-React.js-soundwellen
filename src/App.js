@@ -1,7 +1,6 @@
 import logo from './imgs/logo_nowrite.jpg';
 import './App.css';
 import Navi from './Navbar.js';
-import Subtitle from './Subtitle';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App(){
   function changePage(){
@@ -20,7 +19,7 @@ function App(){
           <div>
           <a href="#" className="sound">
             <img src={logo} className="logo" alt="logo" id="soundwellen" onClick={changePage} />
-            <Subtitle />
+            <div className="subtitle">soundwellen</div>
           </a>
           </div>         
     </div>
