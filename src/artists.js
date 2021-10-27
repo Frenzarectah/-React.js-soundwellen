@@ -26,9 +26,9 @@ var Artists = () =>{
         <div className="subpage">
             <div>artists</div>
             <div className="gallery">
-              <ArtistCard name="theverol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
-              <ArtistCard name="theverol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
-              <ArtistCard name="theverol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
+              <ArtistCard name="the verol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
+              <ArtistCard name="the verol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
+              <ArtistCard name="the verol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
             </div>
         </div>
         </React.Fragment>
