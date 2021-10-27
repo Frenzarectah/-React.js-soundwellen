@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import ArtistCard from './artistCard';
-import pic1 from './imgs/vevol.jpg';
+import pic1 from './imgs/not-av.png';
 function changePage(){
   var logo = document.getElementById("soundwellen");
   var sub = document.getElementsByClassName("subtitle")[0];

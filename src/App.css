@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
+body{
+  background-color: #000;
+}
 @font-face {
   font-family: 'Lastica';
   src: url('/src/fonts/Lastica.ttf') format('truetype');;

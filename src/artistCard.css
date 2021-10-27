@@ -1,5 +1,23 @@
 .frame{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width:25%;
-    height:50%;
+    height:70%;
     border: 1px red solid;
+}
+.photo{
+    width:70%;
+    height:auto;
+}
+img{
+    width:inherit;
+}
+@media only screen and (max-width: 600px){
+
+.frame{
+    width:50%;
+}
+
 }
