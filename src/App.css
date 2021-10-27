@@ -51,6 +51,12 @@
     width:300%;
   }
 }
+.gallery{
+  width:100%;
+  justify-content: space-around;
+  display:flex;
+  flex-direction: row;
+}
 .subpage{
   width:inherit;
   height:80%;
@@ -227,5 +233,11 @@ ul{
   display:flex;
   align-items: center;
   justify-content: center;
+}
+.gallery{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import ArtistCard from './artistCard';
-
+import pic1 from './imgs/vevol.jpg';
 function changePage(){
   var logo = document.getElementById("soundwellen");
   var sub = document.getElementsByClassName("subtitle")[0];
@@ -25,7 +25,11 @@ var Artists = () =>{
         <div className="whiteline"></div>
         <div className="subpage">
             <div>artists</div>
-            <ArtistCard name="theverol" pic="/imgs/vevol.jpg" bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
+            <div className="gallery">
+              <ArtistCard name="theverol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
+              <ArtistCard name="theverol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
+              <ArtistCard name="theverol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
+            </div>
         </div>
         </React.Fragment>
 );

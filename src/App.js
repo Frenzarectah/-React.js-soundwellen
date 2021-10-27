@@ -17,7 +17,7 @@ function App(){
     <div className="App">
           <Navi/>
           <div>
-          <a href="#" className="sound">
+          <a href="/" className="sound">
             <img src={logo} className="logo" alt="logo" id="soundwellen" onClick={changePage} />
             <div className="subtitle">soundwellen</div>
           </a>
