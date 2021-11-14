@@ -8,8 +8,6 @@ function changePage(){
   logo.style.display="none";
   sub.style.display="none";
   var icon = document.getElementById("ico_mob");
-  //var icon_desk = document.getElementById("menu_desk");
-  //icon_desk.className+=" _fadeIn";
   icon.className+=" _fadeIn";
   var head = document.querySelectorAll(".nav-link");
   head.forEach(function(el){
@@ -24,7 +22,7 @@ var Artists = () =>{
       <React.Fragment>
         <div className="whiteline"></div>
         <div className="subpage">
-            <div>artists</div>
+            <div>[  artists   ]</div>
             <div className="gallery">
               <ArtistCard name="the verol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
               <ArtistCard name="the verol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
