@@ -1,10 +1,12 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 function Clocke(){
-    
     var [clicca, setClicca]= useState("under construction");
-        return(
-         <h1 onLoad={()=> setTimeout(setClicca(clicca="UNDER CONSTRUCTION"), 5000)}>{clicca}</h1>
+    var clickEvent=()=>{
+        setClicca("UNDER CONSTRUCTION");
+    }
+    return(
+         <h1 onClick={clickEvent}>{clicca}</h1>
      )
 }
 export default Clocke;
