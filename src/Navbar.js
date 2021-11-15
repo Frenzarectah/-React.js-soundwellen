@@ -21,8 +21,6 @@ const Navi = (props) => {
     setIsOpen(!isOpen);
     var menu = document.getElementById("ico_mob");
     menu.classList.toggle("_rotate");
-    //var icon_desk = document.getElementById("menu_desk");
-    //icon_desk.classList.toggle("_rotate");
     var head = document.querySelectorAll(".nav-link");
     head.forEach(function(el){
       el.classList.toggle("menu_appear");
