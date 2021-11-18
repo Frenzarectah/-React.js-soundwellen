@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import icon from './imgs/menu_ico.jpg';
-import Artists from './artists';
+import Home from './artists';
 import {
   BrowserRouter as Router,
   Switch,
@@ -34,19 +34,19 @@ const Navi = (props) => {
         <Collapse isOpen={isOpen}  navbar color="faded">
           <Nav className="ml px-3" navbar>
             <NavItem>
-            <NavLink  href="/artists">ARTISTS</NavLink>             
+            <NavLink  href="/home">ARTISTS</NavLink>             
             </NavItem>
             <NavItem>
-              <NavLink href="/artists">SHOWS</NavLink>
+              <NavLink href="/home">SHOWS</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/artists">NEWS</NavLink>
+              <NavLink href="/home">NEWS</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/artists">ABOUT US</NavLink>
+              <NavLink href="/home">ABOUT US</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/artists">CONTACTS</NavLink>
+              <NavLink href="/home">CONTACTS</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
@@ -54,7 +54,7 @@ const Navi = (props) => {
       </Navbar>
       <Router>
       <Switch>
-    <Route path='/artists' component={Artists}/>
+    <Route path='/home' component={Home}/>
       </Switch>
       </Router>
       </React.Fragment>
