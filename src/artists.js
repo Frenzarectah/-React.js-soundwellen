@@ -23,7 +23,7 @@ var Home = () =>{
       <React.Fragment>
         <div className="whiteline"></div>
         <div className="subpage">
-            <div>artists</div>
+            <div>[  artists   ]</div>
             <div className="gallery">
                <Carousel>
                  <CarouselCaption>

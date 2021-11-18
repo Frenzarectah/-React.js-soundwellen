@@ -1,11 +1,12 @@
 .frame{
     display:flex;
     flex-direction: column;
-    /*justify-content: center;*/
     align-items: center;
     width:25%;
     height:70%;
     border: 1px red solid;
+    border-radius: 5px;
+    box-shadow:2px 2px 10px whitesmoke;
 }
 .photo{
     width:100%;
