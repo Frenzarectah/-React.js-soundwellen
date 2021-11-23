@@ -3,6 +3,7 @@ import { Carousel, CarouselCaption, CarouselItem } from 'reactstrap';
 import './App.css';
 import ArtistCard from './artistCard';
 import pic1 from './imgs/not-av.png';
+import Carosello from './Carosello';
 function changePage(){
   var logo = document.getElementById("soundwellen");
   var sub = document.getElementsByClassName("subtitle")[0];
@@ -22,22 +23,8 @@ var Home = () =>{
     return(        
       <React.Fragment>
         <div className="whiteline"></div>
-        <div className="subpage">
             <div>[  artists   ]</div>
-            <div className="gallery">
-               <Carousel>
-                 <CarouselCaption>
-                   <h1>copertina</h1>
-                 </CarouselCaption> 
-                 <CarouselItem>
-                   <h1>PAGINAUNO</h1>
-                 </CarouselItem>
-                 <CarouselItem>
-                   <h1>PAGINAUNO</h1>
-                 </CarouselItem>
-              </Carousel>
-            </div>
-        </div>
+            <Carosello/>
         </React.Fragment>
 );
 }
@@ -46,3 +33,5 @@ export default Home;
               <ArtistCard name="the verol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
               <ArtistCard name="the verol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
 */
+//subpage classe div esterno
+//div piu interno classe gallery

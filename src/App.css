@@ -235,6 +235,7 @@ ul{
   justify-content: center;
 }
 .gallery{
+  width:fit-content;
   display:flex;
   flex-direction: column;
   justify-content: space-around;
