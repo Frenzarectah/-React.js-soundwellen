@@ -24,7 +24,7 @@ body{
 @keyframes slideAway{
   from{
     opacity:1;
-    width:30%;
+    width:80%;
     height:auto;
   }
   to{
@@ -139,7 +139,7 @@ h1{
 }
 .logo{
   position:relative;
-  width:30%;
+  width:80%;
   height:auto;
   opacity: 0;
   animation-name:fadeIn;

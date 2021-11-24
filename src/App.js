@@ -1,4 +1,4 @@
-import logo from './imgs/logo_nowrite.jpg';
+import logo from './imgs/logo_nowrite_.jpeg';
 import './App.css';
 import Navi from './Navbar.js';
 import Clocke from './Clocke.js';
