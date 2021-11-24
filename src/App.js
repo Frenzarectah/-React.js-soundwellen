@@ -1,7 +1,6 @@
 import logo from './imgs/logo_nowrite_.jpeg';
 import './App.css';
 import Navi from './Navbar.js';
-import Clocke from './Clocke.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App(){
   function changePage(){
@@ -16,7 +15,6 @@ function App(){
   }
     return (
     <div className="App">
-          <Clocke />
           <Navi/>
           <div>
           <a href="#" className="sound">

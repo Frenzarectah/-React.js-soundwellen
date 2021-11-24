@@ -59,7 +59,6 @@ body{
   height:100vh;
   justify-content: space-around;
   display:flex;
-  flex-direction: row;
 }
 .subpage{
   width:inherit;
@@ -235,9 +234,8 @@ ul{
   justify-content: center;
 }
 .gallery{
-  width:fit-content;
+  /*width:fit-content;*/
   display:flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }

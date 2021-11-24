@@ -22,9 +22,13 @@ var Home = () =>{
     window.onload=() => changePage();
     return(        
       <React.Fragment>
+        <div className="subpage">
         <div className="whiteline"></div>
             <div>[  artists   ]</div>
-            <Carosello/>
+            <div className="gallery">
+                <Carosello/>
+            </div>
+        </div>
         </React.Fragment>
 );
 }
