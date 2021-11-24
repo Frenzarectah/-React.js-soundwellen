@@ -6,12 +6,12 @@ var Carosello=(props)=> {
     const [activeIndex, setActiveIndex] = React.useState(0);
 
      const previousButton = () => {
-        if (nextIndex === 0) alert("finiti!");
+        if (nextIndex === undefined) document.getElementById("prev").style.display="none";
          var nextIndex = activeIndex-1;
          setActiveIndex(nextIndex);
      }
      const nextButton = () => {
-        if (nextIndex === CarouselItem.length) alert("finiti!");
+        if (nextIndex === CarouselItem.length) document.getElementById("next").style.display="none";
          var nextIndex = activeIndex + 1;
          setActiveIndex(nextIndex);
      }
@@ -29,8 +29,8 @@ var Carosello=(props)=> {
             terzo
         </CarouselItem>
     </Carousel>
-    <div onClick={previousButton}>prev</div>
-    <div onClick={nextButton}>next</div>
+    <div id="prev" onClick={previousButton}>prev</div>
+    <div id="next" onClick={nextButton}>next</div>
     </React.Fragment>
     )};
     export default Carosello;
