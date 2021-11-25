@@ -1,9 +1,11 @@
 import React from 'react';
-import { Carousel, CarouselCaption, CarouselItem } from 'reactstrap';
+//import { Carousel, CarouselCaption, CarouselItem } from 'reactstrap';
 import './App.css';
 import ArtistCard from './artistCard';
 import pic1 from './imgs/not-av.png';
-import Carosello from './Carosello';
+//import Carosello from './Carosello';
+import Gallery from './Gallery';
+
 function changePage(){
   var logo = document.getElementById("soundwellen");
   var sub = document.getElementsByClassName("subtitle")[0];
@@ -26,7 +28,7 @@ var Home = () =>{
         <div className="whiteline"></div>
             <div>[  artists   ]</div>
             <div className="gallery">
-                <Carosello/>
+                <Gallery/>
             </div>
         </div>
         </React.Fragment>

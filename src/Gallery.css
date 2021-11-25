@@ -1,0 +1,22 @@
+.gal{
+    display:flex;
+    width:95%;
+    height:50%;
+    border:1px white solid;
+    flex-direction: row;
+    justify-content: center;
+}
+.sx{
+    justify-content:left;
+    align-self:center;
+}
+.dx{
+    justify-content:right;
+    align-self: center;
+}
+.image{
+    border:1px red solid;
+    width:70%;
+    justify-self:center;
+    align-self:center;
+}
