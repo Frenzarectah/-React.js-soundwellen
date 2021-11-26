@@ -3,6 +3,7 @@ This will be a little website for an Electronic Music Organization founded by so
 have a presence in the web.<br>
 I've offered my free collaboration in order to support them with my (small, for now :) knowledge in frontend developing.<br>
 I took the chance to experiment the #React developing and the #ReactStrap library.<br>
+<b>voluntarily without any css framework, for now :)</b><br>
 It is a work-in-progress project but nevertheless, i wanted to share it in public mode.<br>
 Bye :)<br>
 
