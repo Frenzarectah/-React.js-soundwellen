@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import icon from './imgs/menu_ico.jpg';
-import Home from './artists';
+import Home from './Home';
 import {
   BrowserRouter as Router,
   Switch,

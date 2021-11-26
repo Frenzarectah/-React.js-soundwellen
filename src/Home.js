@@ -27,9 +27,7 @@ var Home = () =>{
         <div className="subpage">
         <div className="whiteline"></div>
             <div>[  artists   ]</div>
-            <div className="gallery">
                 <Gallery/>
-            </div>
         </div>
         </React.Fragment>
 );
