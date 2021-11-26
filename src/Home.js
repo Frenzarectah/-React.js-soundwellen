@@ -3,7 +3,6 @@ import React from 'react';
 import './App.css';
 import ArtistCard from './artistCard';
 import pic1 from './imgs/not-av.png';
-//import Carosello from './Carosello';
 import Gallery from './Gallery';
 
 function changePage(){
@@ -26,7 +25,7 @@ var Home = () =>{
       <React.Fragment>
         <div className="subpage">
         <div className="whiteline"></div>
-            <div>[  artists   ]</div>
+            <div className="title">[  artists   ]</div>
                 <Gallery/>
         </div>
         </React.Fragment>
