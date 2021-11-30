@@ -58,5 +58,4 @@ const Navi = (props) => {
       </React.Fragment>
   );
 }
-
 export default Navi;
