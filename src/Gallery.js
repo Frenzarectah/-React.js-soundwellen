@@ -12,16 +12,22 @@ var Gallery = (props)=>{
     var nextClick = () =>{
         setIndx(indx+1);
         console.log(indx);
-        }
+        if(indx===items.length-1) setIndx(0);
+    }
+    var prevClick = () =>{
+        setIndx(indx-1);
+        console.log(indx);
+        if(indx===0) setIndx(items.length-1);
+    }
     return(
     <div className="gal">
-        <div className="sx" style={{fontFamily:"arial"}} onClick={()=>nextClick}>
+        <div className="sx" style={{fontFamily:"arial"}} onClick={()=>prevClick()}>
                     {'<<'}
         </div>
         <div className="image">
                     {items[indx]}
         </div>
-        <div className="dx" style={{fontFamily:"arial"}} onClick={()=>setIndx(indx+1)}>
+        <div className="dx" style={{fontFamily:"arial"}} onClick={()=>nextClick()}>
                     {'>>'}
         </div>
     </div>
