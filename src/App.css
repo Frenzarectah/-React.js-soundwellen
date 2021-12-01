@@ -79,7 +79,7 @@ body{
   background-color:rgba(0,0,0,0.8);
 }
 .navbar{
-  position: absolute;
+  position: relative;
   font-family:'Lastica';
   font-size:0.7em;
   color:white;
