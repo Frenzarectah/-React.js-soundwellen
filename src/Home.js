@@ -29,9 +29,3 @@ var Home = () =>{
 );
 }
 export default Home;
-/*<ArtistCard name="the verol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
-              <ArtistCard name="the verol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
-              <ArtistCard name="the verol" pic={pic1} bio="Lorem ipsum dolor sit amet, consectetur adipiscing" />
-*/
-//subpage classe div esterno
-//div piu interno classe gallery

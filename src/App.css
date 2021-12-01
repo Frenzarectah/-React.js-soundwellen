@@ -106,7 +106,7 @@ h1{
   background-color: white; 
 }
 .icon{
-  position:absolute;
+  position:relative;
   right:3%;
   top:15%;
   width:50px;
@@ -220,6 +220,7 @@ h1{
     height:auto;
   }
   .icon{
+    position:absolute;
     width:30px;
     height:auto;
     top:4%;
