@@ -1,8 +1,5 @@
 import React from 'react';
-//import { Carousel, CarouselCaption, CarouselItem } from 'reactstrap';
 import './App.css';
-import ArtistCard from './artistCard';
-import pic1 from './imgs/not-av.png';
 import Gallery from './Gallery';
 
 function changePage(){
