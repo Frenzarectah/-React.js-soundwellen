@@ -29,7 +29,7 @@ const Navi = (props) => {
   return (
     <React.Fragment>
       <Navbar light expand="md" fixed="top">
-        <Collapse isOpen={isOpen}  navbar color="faded">
+        <Collapse isOpen={isOpen} navbar>
           <Nav className="ml px-3" navbar>
             <NavItem>
             <NavLink  href="/home">ARTISTS</NavLink>             
