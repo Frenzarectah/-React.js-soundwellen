@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width:85%;
+    width:80%;
     height:100%;
     border: 1px blue solid;
     border-radius: 5px;
@@ -22,7 +22,7 @@ img{
 @media only screen and (max-width: 600px){
 
 .frame{
-    width:50%;
+    width:100%;
 }
 
 }
