@@ -73,15 +73,11 @@ body{
 .title{
   width:100%;
 }
-
-/*.navbar{
-  position: relative;
+.navbar{
   font-family:'Lastica';
   font-size:0.7em;
   color:white;
-  width:100%;
-  top:15%;
-}*/
+}
 ul{
   list-style-type: none;
   display:flex;
@@ -208,13 +204,13 @@ h1{
       display:none;
     }
   }
-  /*.navbar-nav{
+  .navbar-nav{
     background-color:rgba(0,0,0,0.8);
   }
   .nav-link{
     text-decoration:none;
     color:white;
-  }*/
+  }
   .logo{
     width:60%;
     height:auto;
@@ -223,8 +219,6 @@ h1{
     position:absolute;
     width:30px;
     height:auto;
-    /*top:4%;
-    right:2%;*/
   }
 .navbar{
   position: absolute;
