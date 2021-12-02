@@ -74,9 +74,7 @@ body{
 .title{
   width:100%;
 }
-.navbar-nav{
-  background-color:rgba(0,0,0,0.8);
-}
+
 .navbar{
   position: relative;
   font-family:'Lastica';
@@ -210,6 +208,9 @@ h1{
       height:auto;
       display:none;
     }
+  }
+  .navbar-nav{
+    background-color:rgba(0,0,0,0.8);
   }
   .nav-link{
     text-decoration:none;
