@@ -209,18 +209,18 @@ h1{
       display:none;
     }
   }
-  .navbar-nav{
+  /*.navbar-nav{
     background-color:rgba(0,0,0,0.8);
   }
   .nav-link{
     text-decoration:none;
     color:white;
-  }
+  }*/
   .logo{
     width:60%;
     height:auto;
   }
-  .icon{
+  /*.icon{
     position:absolute;
     width:30px;
     height:auto;
@@ -234,7 +234,7 @@ h1{
     color:white;
     width:100%;
     top:5%;
-}
+}*/
 .whiteline{
   display:none;
 }
