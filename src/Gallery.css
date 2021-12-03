@@ -9,7 +9,7 @@
     align-items: center;
 }
 .sx{
-    justify-content:left;
+    justify-content:flex-end;
     align-self:center;
     width:10%;
     height:auto;
@@ -17,7 +17,6 @@
 .dx{
     justify-content:right;
     align-self: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width:10%;
     height:auto;
 }

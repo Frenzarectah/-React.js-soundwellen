@@ -15,6 +15,8 @@ function changePage(){
     el.style.color="white";
     el.style.textDecoration="none";
   });
+  var page = document.querySelector(".subpage");
+  page.className+=" _fadeIn";
 }
 var Home = () =>{
     window.onload=() => changePage();
