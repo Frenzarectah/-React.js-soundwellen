@@ -16,7 +16,7 @@ function changePage(){
     el.style.textDecoration="none";
   });
   var page = document.querySelector(".subpage");
-  page.className+=" _fadeIn";
+  page.className+=" _fadeIn_slow";
 }
 var Home = () =>{
     window.onload=() => changePage();

@@ -23,14 +23,14 @@ var Gallery = (props)=>{
     }
     return(
     <div className="gal">
-        <div className="sx" onClick={()=>prevClick()}>
-                   <img src={arrow}/>
+        <div className="left" onClick={()=>prevClick()}>
+                   <img className="dx" src={arrow}/>
         </div>
         <div className="image">
                     {items[indx]}
         </div>
-        <div className="dx" onClick={()=>nextClick()}>
-                    <img src={arrow_fwd}/>
+        <div className="right" onClick={()=>nextClick()}>
+                    <img className="sx" src={arrow_fwd}/>
         </div>
     </div>
 

@@ -4,20 +4,25 @@
     height:100%;
     border:1px white solid;
     flex-direction: row;
-    justify-content: center;
-    display:flex;
+    justify-content:space-around;
     align-items: center;
 }
+.left{
+    display:flex;
+    justify-content:right;
+    width:20%;
+}
+.right{
+    display:flex;
+    justify-content:left;
+    width:20%;
+}
 .sx{
-    justify-content:flex-end;
-    align-self:center;
-    width:10%;
+    width:25%;
     height:auto;
 }
 .dx{
-    justify-content:right;
-    align-self: center;
-    width:10%;
+    width:25%;
     height:auto;
 }
 .image{
@@ -32,5 +37,13 @@
 @media only screen and (max-width: 600px){
 .image{
     width:90%;
+}
+.sx{
+    width:45%;
+    height:auto;
+}
+.dx{
+    width:45%;
+    height:auto;
 }
 }

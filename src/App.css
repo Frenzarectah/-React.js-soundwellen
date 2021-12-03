@@ -61,6 +61,7 @@ body{
   display:flex;
 }
 .subpage{
+  opacity:0;
   width:100%;
   height:80%;
   font-family:'Lastica';
@@ -109,6 +110,12 @@ h1{
 ._fadeIn{
   animation-name:fadeIn;
   animation-duration:2s;
+  animation-fill-mode:forwards;
+}
+._fadeIn_slow{
+  animation-name:fadeIn;
+  animation-duration:2s;
+  animation-delay:0.5s;
   animation-fill-mode:forwards;
 }
 ._rotate{
