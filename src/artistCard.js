@@ -7,10 +7,8 @@ var ArtistCard = (props)=>{
     return(
         <React.Fragment>
         <div className="frame" style={{ backgroundImage: `url(${props.pic})`}}>
-            <div className="photo">
                 <div className="name">[ {props.name} ]</div>
-            </div>
-            <div style={{fontFamily:'Open Sans Condensed'}}>{props.bio}</div>
+                <div style={{fontFamily:'Open Sans Condensed'}}>{props.bio}</div>
         </div>
         </React.Fragment>
 );}
