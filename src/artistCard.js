@@ -1,12 +1,17 @@
 import React from 'react';
+import reactDom from 'react-dom';
 import './artistCard.css';
+
 
 var ArtistCard = (props)=>{
     return(
-        <div className="frame">
-            <div>[ {props.name} ]</div>
-            <div className="photo"><img src={props.pic}/></div>
+        <React.Fragment>
+        <div className="frame" style={{ backgroundImage: `url(${props.pic})`}}>
+            <div className="photo">
+                <div className="name">[ {props.name} ]</div>
+            </div>
             <div style={{fontFamily:'Open Sans Condensed'}}>{props.bio}</div>
         </div>
+        </React.Fragment>
 );}
 export default ArtistCard;
