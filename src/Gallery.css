@@ -2,28 +2,9 @@
     display:flex;
     width:95%;
     height:100%;
-    border:1px white solid;
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
-}
-.left{
-    display:flex;
-    justify-content:right;
-    width:20%;
-}
-.right{
-    display:flex;
-    justify-content:left;
-    width:20%;
-}
-.sx{
-    width:25%;
-    height:auto;
-}
-.dx{
-    width:25%;
-    height:auto;
 }
 
 @media only screen and (max-width: 600px){

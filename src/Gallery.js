@@ -10,15 +10,10 @@ var Gallery = (props)=>{
               <ArtistCard name="doitlater" pic={logod} bio={lorem}/>,
               <ArtistCard name="bluecollar" pic={pic1} bio={lorem}/>];
     const [indx, setIndx] = useState(0);
+    
     var nextClick = () =>{
         setIndx(indx+1);
-        console.log(indx);
         if(indx===items.length-1) setIndx(0);
-    }
-    var prevClick = () =>{
-        setIndx(indx-1);
-        console.log(indx);
-        if(indx===0) setIndx(items.length-1);
     }
     return(
     <div className="gal" onClick={()=>nextClick()}>
