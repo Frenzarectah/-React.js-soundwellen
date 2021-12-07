@@ -11,12 +11,10 @@ var vanish = ()=>{
 }
 var ArtistCard = (props)=>{
     return(
-        <React.Fragment>
         <div className="frame" style={{ backgroundImage: `url(${props.pic})`}} onLoad={()=>vanish()}> 
                 <div style={{width:"60%"}}></div>
                 <div className="name">{props.name}</div>
                 <div className="bio" style={{fontFamily:'Open Sans Condensed'}}>{props.bio}</div>
         </div>
-        </React.Fragment>
 );}
 export default ArtistCard;

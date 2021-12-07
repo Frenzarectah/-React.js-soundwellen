@@ -21,13 +21,11 @@ function changePage(){
 var Home = () =>{
     window.onload=() => changePage();
     return(        
-      <React.Fragment>
         <div className="subpage">
         <div className="whiteline"></div>
             <div className="title">[  artists   ]</div>
                 <Gallery/>
         </div>
-        </React.Fragment>
 );
 }
 export default Home;

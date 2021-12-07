@@ -64,6 +64,7 @@ body{
   opacity:0;
   width:100%;
   height:80%;
+  border:1px white solid;
   font-family:'Lastica';
   color:white;
   display:flex;
@@ -214,9 +215,7 @@ h1{
   .navbar-nav{
     background-color:rgba(0,0,0,0.8);
   }
-  .subpage{
-    display: flex;
-    justify-content:start;    
+  .subpage{  
     height:40%;
   }
   .nav-link{
