@@ -21,6 +21,7 @@ function App(){
             <img src={logo} className="logo" alt="logo" id="soundwellen" onClick={changePage} />
             <div className="subtitle">soundwellen</div>
           </a>
+          <button className="btn">ENTER THE SOUNDWELLEN</button>
           </div>         
     </div>
   );

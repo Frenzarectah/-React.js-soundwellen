@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import icon from './imgs/menu_ico.jpg';
 import Home from './Home';
+import './Navbar.css';
 import {
   BrowserRouter as Router,
   Switch,
