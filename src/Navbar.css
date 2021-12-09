@@ -68,7 +68,7 @@ li{
     .navbar-nav{
         background-color:rgba(237,30,40,0.7);
         width:95vw;
-        height:95vh;
+        height:80vh;
         display:flex;
         align-items: center;
         justify-content: center;
