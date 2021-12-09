@@ -33,6 +33,9 @@ const Navi = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml px-3" navbar>
             <NavItem>
+              <NavLink className="delete" onClick={toggle}>X</NavLink>
+            </NavItem> 
+            <NavItem>
             <NavLink  href="/home">ARTISTS</NavLink>             
             </NavItem>
             <NavItem>

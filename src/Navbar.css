@@ -30,6 +30,9 @@
     color:white;
     text-decoration:none;
   }
+.delete{
+  visibility: hidden;
+}
 li{
     margin-right:5%;
   }
@@ -99,5 +102,12 @@ li{
         top:8px;
         width:30px;
         height:auto;
+    }
+    .delete{
+      position:relative;
+      top: -50px;
+      visibility: visible;
+      font-size:1em;
+      font-weight:bolder;
     }
 }

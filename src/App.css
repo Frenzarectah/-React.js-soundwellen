@@ -22,12 +22,13 @@ body{
 @keyframes slideAway{
   from{
     opacity:1;
-    width:80%;
+    width:50%;
     height:auto;
   }
   to{
     opacity:0;
-    width:15%;
+    transform:translate(540px,-330px);
+    width:10%;
     height:auto;
     display:none;
   }
@@ -142,12 +143,13 @@ h1{
   @keyframes slideAway{
     from{
       opacity:1;
-      width:60%;
+      width:50%;
       height:auto;
     }
     to{
       opacity:0;
-      width:30%;
+      transform:translate(100px,-220px);
+      width:0%;
       height:auto;
       display:none;
     }
