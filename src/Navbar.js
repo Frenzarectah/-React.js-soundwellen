@@ -19,7 +19,7 @@ const Navi = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () =>{ 
-    setIsOpen(!isOpen);
+    setTimeout(setIsOpen(!isOpen),1500);
     var menu = document.getElementById("ico_mob");
     menu.classList.toggle("_rotate");
     var head = document.querySelectorAll(".nav-link");

@@ -112,7 +112,7 @@ h1{
 }
 .logo{
   position:relative;
-  width:80%;
+  width:50%;
   height:auto;
   opacity: 0;
   animation-name:fadeIn;
@@ -123,6 +123,7 @@ h1{
 .subtitle{
   display:flex;
   position:relative;
+  top:-40px;
   color:white;
   font-family:'Lastica';
   opacity:0;
@@ -151,6 +152,20 @@ h1{
       display:none;
     }
   }
+  .App{
+    display:flex;
+    align-items: center;
+  };
+  .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .btn{
+    width:10% !important;
+    background-color: transparent;
+    border:1px white solid;
+  }
   .subpage{  
     height:40%;
   }
@@ -161,5 +176,8 @@ h1{
 
 .whiteline{
   display:none;
+}
+.subtitle{
+  top:0px;
 }
 }

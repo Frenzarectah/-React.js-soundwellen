@@ -56,22 +56,26 @@ li{
           opacity:1;
         }
         to{
+          width:1000px;
           transform:translateX(-15px);
           opacity:0;
+          z-index:1;
         }
       }
       ._rotate{
         animation-name:rotate;
-        animation-duration:2s;
+        animation-duration:1s;
         animation-fill-mode: forwards;
     }
     .navbar-nav{
-        background-color:rgba(237,30,40,0.7);
+        background-color:rgba(237,30,40,0.6);
         width:95vw;
-        height:80vh;
+        height:95vh;
         display:flex;
         align-items: center;
         justify-content: center;
+        margin:auto;
+        z-index:5;
     }
     .navbar{
         position: absolute;
@@ -87,6 +91,9 @@ li{
         text-decoration:none;
         color:white;
   }
+    .nav-item{
+      z-index:99;
+    }
     .icon{
         position:absolute;
         top:8px;
