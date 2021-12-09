@@ -62,7 +62,7 @@ li{
       }
       ._rotate{
         animation-name:rotate;
-        animation-duration:1s;
+        animation-duration:2s;
         animation-fill-mode: forwards;
     }
     .navbar-nav{
@@ -89,7 +89,7 @@ li{
   }
     .icon{
         position:absolute;
-        top:5px;
+        top:8px;
         width:30px;
         height:auto;
     }
