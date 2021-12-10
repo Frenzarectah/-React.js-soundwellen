@@ -33,16 +33,6 @@ body{
     display:none;
   }
 }
-@keyframes frame_in{
-  from{
-    opacity:1;
-    width:100%;
-  }
-  to{
-    opacity:0;
-    width:300%;
-  }
-}
 /*keyframes end*/
 
 .gallery{
@@ -75,6 +65,9 @@ body{
 }
 .enter_btn{
   width:10%;
+  display:inline;
+  display:flex;
+  justify-content: center;
   font-family: 'Lastica';
   font-size:0.7em;
   border:1px solid white;
@@ -154,7 +147,7 @@ h1{
 }
 .slideAway{
   animation-name:slideAway;
-  animation-duration:2s;
+  animation-duration:1.5s;
   animation-fill-mode:forwards;
 }
 
