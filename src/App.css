@@ -33,7 +33,6 @@ body{
     display:none;
   }
 }
-
 @keyframes frame_in{
   from{
     opacity:1;
@@ -66,6 +65,26 @@ body{
 }
 .title{
   width:100%;
+}
+._fadeOut{
+  animation-name:fadeIn;
+  animation-duration: 2s;
+  animation-delay:0.5s;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+}
+.enter_btn{
+  width:10%;
+  font-family: 'Lastica';
+  font-size:0.7em;
+  border:1px solid white;
+  background-color: transparent;
+  color:white;
+  opacity: 0;
+  animation-name:fadeIn;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 h1{
   color:white;
@@ -163,10 +182,10 @@ h1{
     justify-content: center;
     flex-direction: column;
   }
-  .btn{
-    width:10% !important;
-    background-color: transparent;
-    border:1px white solid;
+  .enter_btn{
+    margin-top:40px;
+    width:20%;
+    font-size:0.6em;
   }
   .subpage{  
     height:40%;

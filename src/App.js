@@ -9,6 +9,8 @@ function App(){
     logo.className="slideAway";
     sub.className="slideAway";
     var icon = document.getElementById("ico_mob");
+    var bttn = document.querySelector(".enter_btn");
+    bttn.className+=" _fadeOut";
     icon.className+=" _fadeIn";
   }
     return (
@@ -19,8 +21,8 @@ function App(){
             <img src={logo} className="logo" alt="logo" id="soundwellen" onClick={changePage} />
             <div className="subtitle">soundwellen</div>
           </a>
-          {/*<button className="btn">ENTER THE SOUNDWELLEN</button>*/}
-          </div>         
+          </div>
+          <button className="enter_btn" onClick={changePage}>DISCOVER</button>         
     </div>
   );
 }
