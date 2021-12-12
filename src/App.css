@@ -34,7 +34,12 @@ body{
   }
 }
 /*keyframes end*/
-
+.homepage{
+  opacity:0;
+  border:1px white solid;
+  color:blue;
+  width:98%;
+}
 .gallery{
   width:100%;
   height:100vh;

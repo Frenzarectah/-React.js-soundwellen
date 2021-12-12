@@ -9,6 +9,8 @@ function changePage(){
   sub.style.display="none";
   var icon = document.getElementById("ico_mob");
   icon.className+=" _fadeIn";
+  var bttn = document.querySelector(".enter_btn");
+  bttn.style.display="none";
   var head = document.querySelectorAll(".nav-link");
   head.forEach(function(el){
     el.classList.toggle("menu_appear");

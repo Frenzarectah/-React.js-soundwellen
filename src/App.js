@@ -10,7 +10,9 @@ function App(){
     sub.className="slideAway";
     var icon = document.getElementById("ico_mob");
     var bttn = document.querySelector(".enter_btn");
+    var homepage = document.querySelector(".homepage");
     bttn.className+=" _fadeOut";
+    homepage.className+=" _fadeIn";
     icon.className+=" _fadeIn";
   }
     return (
@@ -22,7 +24,10 @@ function App(){
             <div className="subtitle">soundwellen</div>
           </a>
           </div>
-          <button className="enter_btn" onClick={changePage}>DISCOVER</button>         
+          <button className="enter_btn" onClick={changePage}>DISCOVER</button>
+          <div class="homepage">
+              ET VENTIS ADVERSIS DIONAMINA SEMPER REFORMA
+          </div>         
     </div>
   );
 }
