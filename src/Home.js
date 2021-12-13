@@ -3,6 +3,8 @@ import './App.css';
 import Gallery from './Gallery';
 
 function changePage(){
+  var app = document.querySelector(".App"); 
+  app.className+=" justify-content-start";
   var logo = document.getElementById("soundwellen");
   var sub = document.getElementsByClassName("subtitle")[0];
   logo.style.display="none";
@@ -24,7 +26,7 @@ var Home = () =>{
     window.onload=() => changePage();
     return(        
         <div className="subpage">
-        <div className="whiteline"></div>
+            <div className="whiteline"></div>
             <div className="title">[  artists   ]</div>
                 <Gallery/>
         </div>

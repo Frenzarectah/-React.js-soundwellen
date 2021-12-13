@@ -11,14 +11,16 @@ function App(){
     var icon = document.getElementById("ico_mob");
     var bttn = document.querySelector(".enter_btn");
     var homepage = document.querySelector(".homepage");
+    var app = document.querySelector(".App");
     bttn.className+=" _fadeOut";
     homepage.className+=" _fadeIn";
+    app.className+=" justify-content-start";
     icon.className+=" _fadeIn";
   }
     return (
     <div className="App">
-          <div className="container">
-          <Navi/>
+          <div className="container-fluid">
+          <Navi/>        
           <a href="#" className="sound">
             <img src={logo} className="logo" alt="logo" id="soundwellen" onClick={changePage} />
             <div className="subtitle">soundwellen</div>
@@ -27,7 +29,7 @@ function App(){
           <button className="enter_btn" onClick={changePage}>DISCOVER</button>
           <div class="homepage">
               ET VENTIS ADVERSIS DIONAMINA SEMPER REFORMA
-          </div>         
+          </div> 
     </div>
   );
 }
