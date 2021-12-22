@@ -1,6 +1,12 @@
 import logo from './imgs/logo_nowrite_.jpeg';
 import './App.css';
-import Navi from './Navbar.js';
+import Navi from './Navbar';
+import Main from './Main';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App(){
   function changePage(){
@@ -22,15 +28,21 @@ function App(){
           <div className="container-fluid">
           <Navi/>        
           <a href="#" className="sound">
-            <img src={logo} className="logo" alt="logo" id="soundwellen" onClick={changePage} />
+            <img src={logo} className="logo" alt="logo" id="soundwellen" href="/mainpage" onClick={changePage} />
             <div className="subtitle">soundwellen</div>
           </a>
           </div>
-          <button className="enter_btn" onClick={changePage}>DISCOVER</button>
-          <div class="homepage">
-              ET VENTIS ADVERSIS DIONAMINA SEMPER REFORMA
-          </div> 
+          <button className="enter_btn" onClick={changePage} href="/mainpage">DISCOVER</button>
+          <Main/>
+          <Router>
+            <Switch>
+            <Route path="/mainpage" render={() => <Main/>} />
+            </Switch>
+          </Router>    
     </div>
   );
 }
 export default App;
+/*<div class="homepage">
+              ET VENTIS ADVERSIS DIONAMINA SEMPER REFORMA
+    </div>*/

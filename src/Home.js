@@ -26,9 +26,14 @@ var Home = () =>{
     window.onload=() => changePage();
     return(        
         <div className="subpage">
-            <div className="whiteline"></div>
             <div className="title">[  artists   ]</div>
-                <Gallery/>
+            <div className="content"><Gallery/></div>    
+            <div className="title">[   shows  ]</div>
+            <div className="content">More info soon...</div> 
+            <div className="title">[   news   ]</div>
+            <div className="content">More info soon...</div> 
+            <div className="title">[  contacts ]</div>
+            <div className="content">More info soon...</div> 
         </div>
 );
 }

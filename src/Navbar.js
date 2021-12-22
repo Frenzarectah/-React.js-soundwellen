@@ -56,8 +56,7 @@ const Navi = (props) => {
       </Navbar>
       <Router>
       <Switch>
-    {/*<Route path='/home' component={Home}/>*/}
-    <Route strict path="/home" render={() => <Home />} />
+      <Route strict path="/home" render={() => <Home />} />
       </Switch>
       </Router>
       </React.Fragment>
