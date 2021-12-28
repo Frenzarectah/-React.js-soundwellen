@@ -20,6 +20,7 @@ function App(){
     var app = document.querySelector(".App");
     bttn.className+=" _fadeOut";
     homepage.className+=" _fadeIn";
+    homepage.style.height="80vh";
     app.className+=" justify-content-start";
     icon.className+=" _fadeIn";
   }
