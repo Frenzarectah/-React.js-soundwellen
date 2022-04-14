@@ -28,7 +28,7 @@ var Home = () =>{
         <div className="subpage">
             <div className="title">[  artists   ]</div>
             <div className="content"><Gallery/></div>    
-            <div className="title">[   shows  ]</div>
+            <div className="title" style={{position:"absolute",top:"2000px"}} name="shows">[   shows  ]</div>
             <div className="content">More info soon...</div> 
             <div className="title">[   news   ]</div>
             <div className="content">More info soon...</div> 
